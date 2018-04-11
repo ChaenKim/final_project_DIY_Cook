@@ -6,7 +6,7 @@ import java.util.List;
  * Created by samsung on 4/10/2018.
  */
 
-public class Info_Recipe {
+public class Recipe {
     private int id;                     // id
     private String title;               //레시피 제목
     private User publisher;             //작성자
@@ -17,9 +17,9 @@ public class Info_Recipe {
     /* TODO: 이미지 타입 int로 해도 괜찮은지 */
     private int thumnailImage;          //썸네일이미지
 
-    public Info_Recipe(int _id, String _title, User _publisher,
-                       List<String> _ingredients, List<String> _recipeText,
-                       int _favoriteNum, int _cookingMinutes, int _thumnailImage){
+    public Recipe(int _id, String _title, User _publisher,
+                  List<String> _ingredients, List<String> _recipeText,
+                  int _favoriteNum, int _cookingMinutes, int _thumnailImage){
         this.id = _id;
         this.title = _title;
         this.publisher = _publisher;
